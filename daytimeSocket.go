@@ -1,4 +1,3 @@
-//package golang_practice
 package main
 import (
 	"fmt"
@@ -18,7 +17,7 @@ func main() {
 			continue
 		}
 		daytime := time.Now().String()
-		conn.Write([]byte(daytime)) 
+		conn.Write([]byte(daytime))
 		conn.Close()
 	}
 }
