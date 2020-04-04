@@ -12,8 +12,9 @@ func printArr(arr []int) {
 func main() {
 	arr := []int{1, 4, 3, 5, 6, 2}
 	n := len(arr)
+	var key int
 	for j := 1; j <= n-1; j++ {
-		key := arr[j]
+		key = arr[j]
 		for i := j; i > 0; i-- {
 			if arr[i-1] > arr[i] {
 				arr[i] = arr[i-1]
@@ -22,6 +23,6 @@ func main() {
 				break
 			}
 		}
-		printArr(arr)
 	}
+	printArr(arr)
 }
